@@ -25,3 +25,26 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.h-remaining {
+  height: calc(100vh - 300px);
+}
+
+.header {
+  padding: 1rem 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 2rem;
+  width: min(90%, 1600px);
+  margin-inline: auto;
+  background-color: #181818;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  z-index: 100;
+}
+.header.is-sticky {
+  width: 100%;
+  top: 0;
+  border-radius: 0 0 20px 20px;
+}
