@@ -42,35 +42,33 @@ const FaqItem: React.FC<FaqItemProps> = ({ faq, isOpen, onToggle }) => {
 
 const faqs = [
   {
-    question: "Wo sind die besten Fotospots in Marburg?",
+    question: "Where are the best photo spots in Marburg?",
     answer:
-      "Marburg bietet malerische Orte wie das Marburger Schloss, die Altstadt und die Ufer der Lahn.",
+      "Marburg offers picturesque locations like Marburg Castle, the Old Town, and the banks of the Lahn River.",
   },
   {
-    question: "Gibt es Fotografie-Workshops in Marburg?",
-    answer:
-      "Ja, besonders im Sommer und Herbst finden verschiedene Workshops statt.",
+    question: "Are there photography workshops in Marburg?",
+    answer: "Yes, especially in summer and autumn, various workshops are held.",
   },
   {
-    question: "Ist Drohnenfotografie in Marburg erlaubt?",
+    question: "Is drone photography allowed in Marburg?",
     answer:
-      "Drohnenfotografie ist in einigen Bereichen gestattet, aber lokale Vorschriften und Flugverbotszonen sollten beachtet werden.",
+      "Drone photography is permitted in some areas, but local regulations and no-fly zones should be observed.",
   },
   {
-    question: "Kann man in Marburg Nachtfotografie betreiben?",
+    question: "Can you do night photography in Marburg?",
     answer:
-      "Ja, das lebhafte Nachtleben und die gut beleuchteten historischen Gebäude bieten hervorragende Möglichkeiten für Nachtaufnahmen.",
+      "Yes, the lively nightlife and well-lit historic buildings provide excellent opportunities for night shots.",
   },
   {
-    question: "Gibt es Fotografie-Clubs in Marburg, denen ich beitreten kann?",
+    question: "Are there photography clubs in Marburg that I can join?",
     answer:
-      "In Marburg gibt es mehrere Fotografie-Clubs und Gemeinschaften, die Netzwerk- und Lernmöglichkeiten bieten.",
+      "There are several photography clubs and communities in Marburg that offer networking and learning opportunities.",
   },
   {
-    question:
-      "Welche Jahreszeit ist für Fotografie in Marburg am besten geeignet?",
+    question: "Which season is best for photography in Marburg?",
     answer:
-      "Der Herbst ist besonders schön für Fotografie, wenn die Blätter ihre Farben ändern.",
+      "Autumn is particularly beautiful for photography when the leaves change their colors.",
   },
 ];
 
