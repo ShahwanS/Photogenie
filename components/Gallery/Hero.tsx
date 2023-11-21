@@ -58,10 +58,11 @@ const MyComponent = () => {
           layout="responsive"
           width={400}
           height={300}
+          priority
           alt="Marburg Schloss"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h2 className="text-2xl font-semibold text-white shadow-md">
+          <h2 className="text-2xl font-semibold text-white shadow-md mt-20">
             🏰 Marburg an der lahn ᴅᴇ
           </h2>
         </div>
