@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import "./hero.css";
+import "./Hero.css";
 import Image from "next/image";
 import Apple from "../../public/images/Apple.png";
 
