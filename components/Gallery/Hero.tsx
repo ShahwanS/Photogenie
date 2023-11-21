@@ -3,7 +3,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Hero.css";
 import Image from "next/image";
-import Apple from "../../public/images/Apple.png";
+import Schloss from "../../public/images/Schloss.jpg";
 
 const useMediaQuery = (query: any) => {
   const [matches, setMatches] = useState(false);
@@ -54,11 +54,11 @@ const MyComponent = () => {
       <div className="relative flex flex-col items-center justify-center  w-full h-full">
         <Image
           className=" shadow-md w-full h-full"
-          src={Apple}
+          src={Schloss}
           layout="responsive"
           width={400}
           height={300}
-          alt="Marburg an der Lahn"
+          alt="Marburg Schloss"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h2 className="text-2xl font-semibold text-white shadow-md">
@@ -84,10 +84,10 @@ const MyComponent = () => {
           <span className="image-inner">
             <Image
               className="link-image"
-              src={Apple}
+              src={Schloss}
               width={500}
               height={500}
-              alt="Tokyo Tower"
+              alt="Marburg Schloss"
               ref={linkImageRef}
             />
           </span>
