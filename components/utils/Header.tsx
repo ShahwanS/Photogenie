@@ -104,10 +104,10 @@ const Header = () => {
                 onClick={() => setMenuOpen(false)}
                 className="py-4 border-b border-gray-700"
               >
-                Portfolio
+                Home
               </li>
             </Link>
-            <Link href="/">
+            <Link href="/Gallery">
               <div
                 onClick={() => setMenuOpen(false)}
                 className="py-4 border-b border-gray-700"
@@ -115,7 +115,7 @@ const Header = () => {
                 Gallery
               </div>
             </Link>
-            <Link href="/">
+            <Link href="/Contact">
               <div
                 onClick={() => setMenuOpen(false)}
                 className="py-4 border-b border-gray-700"
