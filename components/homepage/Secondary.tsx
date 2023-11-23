@@ -17,24 +17,30 @@ const Secondary = () => {
           Discover the unique style and approach of our photographer as he
           captures the beauty of Marburg in his artwork.
         </p>
-        <div className="grid grid-cols-1 gap-4">
-          <div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
-              Unique Approach
-            </h2>
-            <p className="text-gray-500">
-              With an artistic eye, our photographer brings out the soul of
-              Marburg in every shot.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
-              Unforgettable Moments
-            </h2>
-            <p className="text-gray-500">
-              Experience the magic of Marburg through our photographer&apos;s
-              lens and relive the memories forever.
-            </p>
+        <div className="w-[667px] max-w-full mt-10 self-start">
+          <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+            <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
+              <div className="items-stretch flex flex-col max-md:mt-6">
+                <div className="text-neutral-400 text-xl font-bold leading-7">
+                  Unique Approach
+                </div>
+                <div className="text-white text-base leading-6 mt-4">
+                  With an artistic eye, our photographer brings out the soul of
+                  Marburg in every shot.
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
+              <div className="items-stretch flex grow flex-col max-md:mt-6">
+                <div className="text-neutral-400 text-xl font-bold leading-7">
+                  Unforgettable Moments
+                </div>
+                <div className="text-white text-base leading-6 mt-4">
+                  Experience the magic of Marburg through our photographer&apos;
+                  s lens and relive the memories forever.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
