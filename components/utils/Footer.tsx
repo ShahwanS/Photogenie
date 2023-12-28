@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const navigation = {
   navigate: [
-    { name: "Gallery", href: "/Gallery" },
-    { name: "Contact", href: "#" },
+    { name: "Galerie", href: "/galerie" },
+    { name: "Kontakt", href: "/Contact" },
   ],
   social: [
     {
@@ -58,11 +58,17 @@ const navigation = {
       ),
     },
   ],
+  legal: [
+    { name: "Impressum", href: "/legal#Impressum" },
+    { name: "AGB", href: "/legal#AGB" },
+    { name: "Datenschutz", href: "/legal#Datenschutz" },
+    { name: "Cookie-Richtlinie", href: "/legal#Cookies" },
+  ],
 };
 export default function Footer() {
   return (
     <footer
-      className="bg-[#181818] text-gray-300 py-12 w-full h-full"
+      className=" bg-[#181818] text-gray-300 py-12 w-full h-full"
       aria-labelledby="footer-heading"
     >
       <div className="container mx-auto max-w-7xl px-6 lg:px-8">
@@ -72,7 +78,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
           {/* Logo and Social Media Icons */}
-          <div className="space-y-4 text-center lg:text-left">
+          <div className="col-span-1 space-y-4 text-center lg:text-left">
             <Link
               className="flex justify-center items-center sm:mr-10"
               href="/"
@@ -99,36 +105,50 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* navigate Links */}
-          <div className="md:col-span-4 flex justify-center">
-            {["navigate"].map((category) => (
-              <div key={category}>
-                <h3 className="text-sm font-semibold leading-6 text-white mb-4 capitalize">
-                  {category}
-                </h3>
-                <ul role="list" className="space-y-2">
-                  {navigation[
-                    category.toLowerCase() as keyof typeof navigation
-                  ].map((item: any) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className="text-sm leading-6 text-gray-400 hover:text-white transition-colors duration-200"
-                      >
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          {/* Navigate Links */}
+          <div className="col-span-2 md:col-span-2">
+            <h3 className="text-sm font-semibold leading-6 text-white mb-4 capitalize">
+              navigate
+            </h3>
+            <ul role="list" className="space-y-2">
+              {navigation.navigate.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm leading-6 text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal Links */}
+          <div className="col-span-2 md:col-span-2">
+            <h3 className="text-sm font-semibold leading-6 text-white mb-4 capitalize">
+              legal
+            </h3>
+            <ul role="list" className="space-y-2">
+              {navigation.legal.map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm leading-6 text-gray-400 hover:text-white transition-colors duration-200"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
         {/* Copyright */}
         <div className="border-t border-white/10 pt-4">
           <p className="text-xs leading-5 text-center text-gray-400">
-            &copy; {new Date().getFullYear()} Photogenie. All rights reserved.
+            &copy; {new Date().getFullYear()} Photogenie. Alle Rechte
+            vorbehalten.
           </p>
         </div>
       </div>

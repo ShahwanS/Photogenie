@@ -26,8 +26,23 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Default style for small height (mobile in portrait) */
 .h-remaining {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 150px); /* Adjusted height for smaller height */
+}
+
+/* Medium height screens (tablets in landscape/laptops) */
+@media (min-height: 800px) {
+  .h-remaining {
+    height: calc(100vh - 200px); /* Adjusted height for medium height */
+  }
+}
+
+/* Tall height screens (desktop/large laptops) */
+@media (min-height: 1200px) {
+  .h-remaining {
+    height: calc(100vh - 300px); /* Original height for tall screens */
+  }
 }
 
 .header {

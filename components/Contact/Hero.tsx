@@ -130,10 +130,10 @@ const ContactForm: React.FC = () => {
     <div className="mx-auto px-4 py-8 flex flex-col sm:flex-row mt-[300px] bg-[#2D2D2D] w-full h-full">
       <div className="w-full sm:w-1/2 px-4 space-y-10">
         <h2 className="text-3xl sm:text-5xl font-semibold mb-4 text-[#9E9E9E]">
-          Get in Touch
+          Kontaktieren Sie uns
         </h2>
         <p className="mb-4">
-          Have any questions or inquiries? Feel free to reach out to us!
+          Haben Sie Fragen oder Anfragen? Zögern Sie nicht, uns zu kontaktieren!
         </p>
         <div className="text-[#9E9E9E]">
           <p className="mb-4">
@@ -149,7 +149,7 @@ const ContactForm: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <div className="w-full sm:w-1/2">
               <label htmlFor="firstName" className="text-white block mb-2">
-                First Name
+                Vorname{" "}
               </label>
               <input
                 type="text"
@@ -164,7 +164,7 @@ const ContactForm: React.FC = () => {
             </div>
             <div className="w-full sm:w-1/2">
               <label htmlFor="lastName" className="text-white block mb-2">
-                Last Name
+                Nachname
               </label>
               <input
                 type="text"
@@ -196,7 +196,7 @@ const ContactForm: React.FC = () => {
             </div>
             <div className="w-1/2">
               <label htmlFor="phone" className="text-white block mb-2">
-                Phone Number
+                Handynummer
               </label>
               <input
                 type="tel"
@@ -211,7 +211,7 @@ const ContactForm: React.FC = () => {
           </div>
           <div>
             <label htmlFor="message" className="text-white block mb-2">
-              Message
+              Nachricht
             </label>
             <textarea
               id="message"
@@ -233,7 +233,7 @@ const ContactForm: React.FC = () => {
               className="w-4 h-4 text-blue-600 bg-gray-100 rounded border-gray-300"
             />
             <label htmlFor="consent" className="ml-2 text-sm text-white">
-              I agree to the terms and conditions
+              Ich stimme den Bedingungen und Konditionen zu{" "}
             </label>
           </div>
           <button

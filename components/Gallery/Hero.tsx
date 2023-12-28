@@ -26,12 +26,12 @@ const useMediaQuery = (query: any) => {
 const MyComponent = () => {
   const linkTextRef = useRef<HTMLSpanElement>(null);
   const linkImageRef = useRef<HTMLImageElement>(null);
-  const isMobile = useMediaQuery("(max-width: 768px)"); // Adjust the max-width as needed for your design
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     const showImgContent = (e: MouseEvent) => {
       const x = e.clientX;
-      const y = e.clientY - 20;
+      const y = e.clientY;
       if (linkImageRef.current) {
         linkImageRef.current.style.transform = `translate3d(${x}px, ${y}px, 0)`;
       }
@@ -53,7 +53,7 @@ const MyComponent = () => {
     return (
       <div className="relative flex flex-col items-center justify-center  w-full h-full">
         <Image
-          className=" shadow-md w-full h-full"
+          className=" shadow-md w-full h-full opacity-60"
           src={Schloss}
           layout="responsive"
           width={400}
@@ -72,13 +72,13 @@ const MyComponent = () => {
 
   // Default render for non-mobile devices
   return (
-    <div className="hidden  relative sm:flex justify-center items-center sm:h-[15vw]  w-full mt-14 ">
+    <div className="hidden  relative sm:flex justify-center items-center lg:h-[22vw] xl:h-[15vw]  w-full pt-20 ">
       <a className="link" href="#">
-        Marburg Gallery
+        Marburg Galerie
       </a>
       <span className="hover-container hidden sm:block">
-        <span className="link-text " aria-hidden="true" ref={linkTextRef}>
-          🏰 Marburg Gallery ᴅᴇ
+        <span className="link-text pt-20" aria-hidden="true" ref={linkTextRef}>
+          🏰 Marburg Galerie ᴅᴇ
         </span>
 
         <span className="image-container">

@@ -3,22 +3,28 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-import Apple from "../../public/images/Apple.png";
-import DNA from "../../public/images/DNA stairs.png";
-import im1 from "../../public/images/im1.jpg";
-import im2 from "../../public/images/im2.jpg";
-import im3 from "../../public/images/im3.jpg";
-import im4 from "../../public/images/im4.jpg";
-import im5 from "../../public/images/im5.jpg";
-import im6 from "../../public/images/im6.jpg";
-import im7 from "../../public/images/im7.jpg";
-import Space from "../../public/images/Space web.png";
+import Apple from "../../public/images/Galleryimage (1).jpg";
+import DNA from "../../public/images/Galleryimage (1).webp";
+import im1 from "../../public/images/Galleryimage (10).webp";
+import im2 from "../../public/images/Galleryimage (11).webp";
+import im3 from "../../public/images/Galleryimage (12).webp";
+import im4 from "../../public/images/Galleryimage (13).webp";
+import im5 from "../../public/images/Galleryimage (14).webp";
+import im6 from "../../public/images/Galleryimage (15).webp";
+import im7 from "../../public/images/Galleryimage (16).webp";
+import Space from "../../public/images/Galleryimage (17).webp";
+import im8 from "../../public/images/Galleryimage (18).webp";
+import im9 from "../../public/images/Galleryimage (19).webp";
+import im10 from "../../public/images/Galleryimage (2).webp";
+import im11 from "../../public/images/Galleryimage (20).webp";
+import im12 from "../../public/images/Galleryimage (21).webp";
+import im13 from "../../public/images/Galleryimage (22).webp";
 
 // Define an interface for the image object
 interface ImageObject {
   filter: string;
   title: string;
-  image: StaticImageData; // Assuming the type is StaticImageData from 'next/image'
+  image: StaticImageData;
   alt: string;
 }
 
@@ -95,6 +101,42 @@ const images = [
     image: DNA,
     alt: "h",
   },
+  {
+    filter: "architecture",
+    title: "title 13",
+    image: im8,
+    alt: "h",
+  },
+  {
+    filter: "landscape",
+    title: "title 14",
+    image: im9,
+    alt: "h",
+  },
+  {
+    filter: "Cityscape",
+    title: "title 15",
+    image: im10,
+    alt: "h",
+  },
+  {
+    filter: "architecture",
+    title: "title 16",
+    image: im11,
+    alt: "h",
+  },
+  {
+    filter: "landscape",
+    title: "title 17",
+    image: im12,
+    alt: "h",
+  },
+  {
+    filter: "Cityscape",
+    title: "title 18",
+    image: im13,
+    alt: "h",
+  },
 ];
 
 const GalleryComponent = () => {
@@ -146,37 +188,29 @@ const GalleryComponent = () => {
       {/* Image Modal */}
       {selectedImage && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+          className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 "
           onClick={closeModal} // Close modal when clicking on the overlay
         >
           <div
-            className="bg-black p-2 sm:p-4 rounded-xl shadow-lg max-w-xs sm:max-w-xl mx-auto transition duration-300 ease-in-out transform scale-95 hover:scale-100"
-            onClick={(e) => e.stopPropagation()} // Prevent click inside the modal from closing it
+            className=" p-2 rounded-xl shadow-lg max-w-xs sm:max-w-xl mx-auto transition duration-300 ease-in-out transform scale-95 hover:scale-100 lg:h-[85vh] xl:h-auto lg:mt-20 xl:mt-24"
+            onClick={(e) => e.stopPropagation()}
           >
             <Image
               src={selectedImage.image}
               alt={selectedImage.alt}
-              layout="responsive"
               width="600"
               height="400"
-              objectFit="contain"
+              className="rounded-xl object-contain h-full w-full "
             />
-            <button
-              onClick={closeModal}
-              className="absolute top-0 right-0 m-2 bg-gray-500 text-white p-2 rounded"
-            >
-              X
-            </button>
           </div>
         </div>
       )}
-
       <div className="mx-auto max-w-xs sm:max-w-7xl">
         <h1 className="text-2xl sm:text-5xl font-bold text-center mb-2 sm:mb-4 text-[#9E9E9E]">
-          Capturing Moments
+          Momente festhalten
         </h1>
         <p className="text-lg sm:text-xl text-center mb-4 sm:mb-8 text-white mt-5">
-          Exploring the Beauty of Marburg Through Photography
+          Die Schönheit von Marburg durch Fotografie erkunden
         </p>
 
         <div className="flex flex-wrap justify-center gap-1 sm:gap-4 mb-4 sm:mb-8">
@@ -206,20 +240,13 @@ const GalleryComponent = () => {
               } `}
               onClick={() => openModal(item)}
             >
-              <div className="overflow-hidden rounded-lg aspect-square shadow-xl">
-                <div className="relative w-full h-full">
+              <div className="overflow-hidden rounded-xl aspect-square shadow-xl">
+                <div className="relative w-full h-full ">
                   <Image
                     src={item.image}
                     alt={item.alt}
-                    className="transform group-hover:scale-110 transition duration-500 ease-in-out object-cover"
+                    className="transform group-hover:scale-110 transition duration-500 ease-in-out object-cover inset-0 w-full h-full opacity-90 hover:opacity-100"
                     fill
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                    }}
                   />
                 </div>
               </div>
@@ -235,7 +262,7 @@ const GalleryComponent = () => {
             <button
               key={index + 1}
               onClick={() => setCurrentPage(index + 1)}
-              className={`border border-gray-700   p-4 rounded-xl rounded text-xs sm:text-lg transition duration-300 ease-in-out ${
+              className={`border border-gray-700   p-4 rounded-xl  text-xs sm:text-lg transition duration-300 ease-in-out ${
                 currentPage === index + 1 ? "bg-blue-500" : "hover:bg-gray-700"
               }`}
             >

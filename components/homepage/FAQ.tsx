@@ -1,6 +1,5 @@
 "use client";
 
-import { Link } from "lucide-react";
 import React, { useState } from "react";
 import {
   IoIosAddCircleOutline,
@@ -42,33 +41,35 @@ const FaqItem: React.FC<FaqItemProps> = ({ faq, isOpen, onToggle }) => {
 
 const faqs = [
   {
-    question: "Where are the best photo spots in Marburg?",
+    question: "Wo sind die besten Fotospots in Marburg?",
     answer:
-      "Marburg offers picturesque locations like Marburg Castle, the Old Town, and the banks of the Lahn River.",
+      "Marburg bietet malerische Orte wie das Marburger Schloss, die Altstadt und die Ufer der Lahn.",
   },
   {
-    question: "Are there photography workshops in Marburg?",
-    answer: "Yes, especially in summer and autumn, various workshops are held.",
+    question: "Gibt es Fotografie-Workshops in Marburg?",
+    answer:
+      "Ja, insbesondere im Sommer und Herbst werden verschiedene Workshops angeboten.",
   },
   {
-    question: "Is drone photography allowed in Marburg?",
+    question: "Ist Drohnenfotografie in Marburg erlaubt?",
     answer:
-      "Drone photography is permitted in some areas, but local regulations and no-fly zones should be observed.",
+      "Drohnenfotografie ist in einigen Gebieten erlaubt, es sollten jedoch lokale Vorschriften und No-Fly-Zonen beachtet werden.",
   },
   {
-    question: "Can you do night photography in Marburg?",
+    question: "Kann man in Marburg Nachtfotografie betreiben?",
     answer:
-      "Yes, the lively nightlife and well-lit historic buildings provide excellent opportunities for night shots.",
+      "Ja, das lebendige Nachtleben und gut beleuchtete historische Gebäude bieten ausgezeichnete Möglichkeiten für Nachtaufnahmen.",
   },
   {
-    question: "Are there photography clubs in Marburg that I can join?",
+    question: "Gibt es Fotografievereine in Marburg, denen ich beitreten kann?",
     answer:
-      "There are several photography clubs and communities in Marburg that offer networking and learning opportunities.",
+      "Es gibt mehrere Fotografievereine und Gemeinschaften in Marburg, die Networking- und Lernmöglichkeiten bieten.",
   },
   {
-    question: "Which season is best for photography in Marburg?",
+    question:
+      "Welche Jahreszeit eignet sich am besten für Fotografie in Marburg?",
     answer:
-      "Autumn is particularly beautiful for photography when the leaves change their colors.",
+      "Der Herbst ist besonders schön für die Fotografie, wenn die Blätter ihre Farben wechseln.",
   },
 ];
 
@@ -83,7 +84,7 @@ const Faq = () => {
     <div className="flex flex-col justify-center items-center w-full h-full bg-[#1E1E1E]">
       <div className=" p-6 rounded-lg w-full ">
         <h1 className="text-3xl text-[#9E9E9E] mb-6 self-center">
-          Frequently Asked Questions
+          Häufig gestellte Fragen
         </h1>
 
         {faqs.map((faq, index) => (
@@ -97,14 +98,14 @@ const Faq = () => {
       </div>
 
       <h1 className="sm:text-5xl text-[#9E9E9E] mb-6 self-center m-5">
-        Still Have questions?
+        Haben Sie immer noch Fragen?
       </h1>
-      <p className="text-2xl ">Feel free to reach out to us</p>
+      <p className="text-2xl ">Zögern Sie nicht, uns zu kontaktieren</p>
       <a
         className="border-2 rounded-xl p-4 m-5 hover:opacity-70"
         href="/Contact"
       >
-        Contact
+        Kontakt
       </a>
     </div>
   );

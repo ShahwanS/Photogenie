@@ -5,22 +5,29 @@ import React, { useState, useEffect } from "react";
 const quotesData = [
   {
     quote:
-      "The camera is an instrument that teaches people how to see without a camera.",
-    author: "Dorothea Lange",
-    // Add more photography-related quotes here
+      "Fotografie ist die Sprache, die ich verstehe. Durch meine Bilder erzähle ich Geschichten, die ohne Worte auskommen.",
+    author: "Anonym",
   },
   {
     quote:
-      "Photography for me is not looking, it’s feeling. If you can’t feel what you’re looking at, then you’re never going to get others to feel anything when they look at your pictures.",
-    author: "Don McCullin",
-    // Add more photography-related quotes here
+      "In jedem Augenblick des Lebens gibt es eine Schönheit, die darin entdeckt werden kann. Die Fotografie hilft uns, diese Schönheit festzuhalten und zu teilen.",
+    author: "Ansel Adams",
   },
   {
-    quote: "When I have a camera in my hand, I know no fear.",
-    author: "Alfred Eisenstaedt",
-    // Add more photography-related quotes here
+    quote:
+      "Die Kamera erlaubt es uns, die Welt mit anderen Augen zu sehen und die Details im Alltäglichen zu entdecken.",
+    author: "Anonym",
   },
-  // ... Add more quote objects as needed
+  {
+    quote:
+      "Die Fotografie ist das Gedächtnis der Welt. Sie bewahrt die Momente und Geschichten für die Ewigkeit.",
+    author: "Sabrina Mueller",
+  },
+  {
+    quote:
+      "Ein gutes Foto ist ein Foto, das man fühlen kann. Es berührt die Seele und lässt den Betrachter in die Szene eintauchen.",
+    author: "Peter Schneider",
+  },
 ];
 
 const QuoteCarousel = () => {
@@ -34,7 +41,7 @@ const QuoteCarousel = () => {
       setTimeout(() => {
         setCurrentIndex((currentIndex + 1) % quotesData.length);
       }, 500);
-    }, 4500);
+    }, 2500);
     return () => clearTimeout(timer);
   }, [currentIndex]);
 
