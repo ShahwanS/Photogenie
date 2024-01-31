@@ -184,7 +184,7 @@ const GalleryComponent = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#2D2D2D] p-2 sm:p-8 w-full relative">
+    <div className="min-h-screen bg-[#454545] p-2 sm:p-8 w-full relative">
       {/* Image Modal */}
       {selectedImage && (
         <div
@@ -240,7 +240,7 @@ const GalleryComponent = () => {
               } `}
               onClick={() => openModal(item)}
             >
-              <div className="overflow-hidden rounded-xl aspect-square shadow-xl">
+              <div className="overflow-hidden rounded-sm  aspect-square shadow-xl">
                 <div className="relative w-full h-full ">
                   <Image
                     src={item.image}
@@ -263,7 +263,7 @@ const GalleryComponent = () => {
               key={index + 1}
               onClick={() => setCurrentPage(index + 1)}
               className={`border border-gray-700   p-4 rounded-xl  text-xs sm:text-lg transition duration-300 ease-in-out ${
-                currentPage === index + 1 ? "bg-blue-500" : "hover:bg-gray-700"
+                currentPage === index + 1 ? "bg-blue-300" : "hover:bg-gray-700"
               }`}
             >
               {index + 1}

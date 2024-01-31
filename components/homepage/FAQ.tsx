@@ -100,9 +100,11 @@ const Faq = () => {
       <h1 className="sm:text-5xl text-[#9E9E9E] mb-6 self-center m-5">
         Haben Sie immer noch Fragen?
       </h1>
-      <p className="text-2xl ">Zögern Sie nicht, uns zu kontaktieren</p>
+      <p className="text-2xl text-white">
+        Zögern Sie nicht, uns zu kontaktieren
+      </p>
       <a
-        className="border-2 rounded-xl p-4 m-5 hover:opacity-70"
+        className="border-2 rounded-xl p-4 m-5 hover:opacity-70 text-white"
         href="/Contact"
       >
         Kontakt

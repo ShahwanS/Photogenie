@@ -57,7 +57,7 @@ const Secondary = () => {
               className="shadow-lg rounded-xl object-cover w-full  h-[400px]"
             />
           </div>
-          <div className=" sm:mr-20  w-[250px] h-[450px] overflow-hidden rounded-xl relative">
+          <div className=" sm:mr-20  w-[250px] h-[450px] overflow-hidden  relative">
             <Image
               src={im5}
               alt="Item 3"

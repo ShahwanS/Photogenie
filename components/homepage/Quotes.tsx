@@ -41,7 +41,7 @@ const QuoteCarousel = () => {
       setTimeout(() => {
         setCurrentIndex((currentIndex + 1) % quotesData.length);
       }, 500);
-    }, 2500);
+    }, 2000);
     return () => clearTimeout(timer);
   }, [currentIndex]);
 
@@ -49,7 +49,7 @@ const QuoteCarousel = () => {
 
   return (
     <div className="flex flex-col items-center justify-center w-full h-[500px] bg-[#2D2D2D] text-white p-10">
-      <div className="max-w-4xl w-full h-full flex flex-col items-center justify-center px-10 py-8 bg-gray-900 rounded-xl shadow-xl">
+      <div className="max-w-4xl w-full h-full flex flex-col items-center justify-center px-10 py-8 bg-black rounded-xl shadow-xl">
         <div
           className={`transition-opacity duration-500 ${
             fade ? "opacity-100" : "opacity-0"

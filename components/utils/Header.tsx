@@ -39,20 +39,7 @@ const Header = () => {
 
   return (
     <nav className={`header ${isSticky ? "is-sticky" : ""}`}>
-      <div className="flex items-center justify-between lg:h-[50px] h-full xl:h-full w-full px-4 2xl:px-16">
-        <div className="hidden sm:flex">
-          <ul className="flex space-x-6">
-            <Link href="/" className="transition transform hover:scale-110">
-              <div>Startseite</div>
-            </Link>
-            <Link
-              href="/galerie"
-              className="transition transform hover:scale-110"
-            >
-              <div>Galerie</div>
-            </Link>
-          </ul>
-        </div>
+      <div className="flex items-center justify-between lg:h-[50px] h-full xl:h-full w-full md:px-10 2xl:px-16">
         <Link href="/">
           <Image
             src={logo}
@@ -107,14 +94,7 @@ const Header = () => {
                 Home
               </li>
             </Link>
-            <Link href="/galerie">
-              <div
-                onClick={() => setMenuOpen(false)}
-                className="py-4 border-b border-gray-700"
-              >
-                galerie
-              </div>
-            </Link>
+
             <Link href="/Contact">
               <div
                 onClick={() => setMenuOpen(false)}
