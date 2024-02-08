@@ -5,7 +5,7 @@ const Primarysection = () => {
     <div className="relative w-full h-screen">
       <Image
         className="shadow-md w-full  opacity-80 h-full object-cover object-center"
-        src={"/images/porsche1.jpg"}
+        src={"/images/Porsche.jpg"}
         width={1000}
         height={1000}
         priority
