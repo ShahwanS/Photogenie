@@ -84,7 +84,7 @@ export default function Footer() {
               href="/"
             >
               <Image
-                src="/images/logo.png"
+                src="/images/logo.webp"
                 alt="Photogenie"
                 width={205}
                 height={75}

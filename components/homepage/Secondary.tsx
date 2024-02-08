@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
 
-import im4 from "../../public/images/Galleryimage (18).webp";
-import im5 from "../../public/images/Galleryimage (15).webp";
-import im6 from "../../public/images/Galleryimage (9).webp";
-import im7 from "../../public/images/Galleryimage (7).jpg";
+import im4 from "../../public/images/typ im cafe.jpg";
+import im5 from "../../public/images/sec (2).webp";
+import im6 from "../../public/images/sec (1).jpg";
+import im7 from "../../public/images/sec (2).jpg";
 
 const Secondary = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto bg-[#2D2D2D] -z-10 p-4 xl:p-16 h-auto lg:h-[75vw] xl:h-[52vw] w-full overflow-hidden">
+    <div className="grid grid-cols-1 lg:grid-cols-2 mx-auto bg-[#2D2D2D] -z-10 p-4  h-auto  w-full overflow-hidden">
       <div className="my-auto text-white space-y-6 sm:space-y-10 lg:space-y-20 px-4 md:px-8 lg:px-12">
         <h1 className="text-xl sm:text-3xl md:text-4xl xl:text-5xl font-bold mb-4">
           Sehen Sie Marburg mit den Augen unseres Fotografen
@@ -54,7 +54,7 @@ const Secondary = () => {
               alt="Item 1"
               width={500}
               height={500}
-              className="shadow-lg rounded-xl object-cover w-full  h-[400px]"
+              className="shadow-lg  object-cover w-full  h-[400px]"
             />
           </div>
           <div className=" sm:mr-20  w-[250px] h-[450px] overflow-hidden  relative">
@@ -68,22 +68,22 @@ const Secondary = () => {
           </div>
         </div>
         <div className="flex flex-col sm:space-y-10 -space-x-10 mt-20">
-          <div className=" sm:ml-7 -mt-16 -z-10 w-[250px] h-[450px] overflow-hidden rounded-lg ml-32">
+          <div className=" sm:ml-7 -mt-16 -z-10 w-[250px] h-[450px] overflow-hidden  ml-32">
             <Image
               src={im6}
               alt="Item 2"
               width={500}
               height={500}
-              className="shadow-lg object-cover w-full h-[450px] rounded-xl "
+              className="shadow-lg object-cover w-full h-[450px] "
             />
           </div>
-          <div className=" w-[250px] h-[450px] overflow-hidden md:-mt-20 sm:-z-10 mt-5 rounded-xl">
+          <div className=" w-[250px] h-[450px] overflow-hidden md:-mt-20 sm:-z-10 mt-5 ">
             <Image
               src={im7}
               alt="Item 4"
               width={500}
               height={500}
-              className="shadow-lg rounded-xl object-cover w-full h-[450px]"
+              className="shadow-lg object-cover w-full h-[450px]"
             />
           </div>
         </div>

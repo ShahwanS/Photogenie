@@ -3,7 +3,7 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-import Apple from "../../public/images/Galleryimage (1).jpg";
+import Apple from "../../public/images/Galleryimage (21).webp";
 import DNA from "../../public/images/Galleryimage (1).webp";
 import im1 from "../../public/images/Galleryimage (10).webp";
 import im2 from "../../public/images/Galleryimage (11).webp";
