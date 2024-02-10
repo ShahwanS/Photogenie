@@ -5,9 +5,9 @@ const Primarysection = () => {
     <div className="relative w-full h-screen">
       <Image
         className="shadow-md w-full  opacity-80 h-full object-cover object-center"
-        src={"/images/Porsche.jpg"}
-        width={1000}
-        height={1000}
+        src={"/images/Porsche.webp"}
+        width={2000}
+        height={2000}
         priority
         alt="Marburg Schloss"
       />
