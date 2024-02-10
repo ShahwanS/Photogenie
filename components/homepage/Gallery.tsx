@@ -3,22 +3,21 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 
-import Apple from "../../public/images/Galleryimage (21).webp";
-import DNA from "../../public/images/Galleryimage (1).webp";
-import im1 from "../../public/images/Galleryimage (10).webp";
-import im2 from "../../public/images/Galleryimage (11).webp";
-import im3 from "../../public/images/Galleryimage (12).webp";
-import im4 from "../../public/images/Galleryimage (13).webp";
-import im5 from "../../public/images/Galleryimage (14).webp";
-import im6 from "../../public/images/Galleryimage (15).webp";
-import im7 from "../../public/images/Galleryimage (16).webp";
-import Space from "../../public/images/Galleryimage (17).webp";
-import im8 from "../../public/images/Galleryimage (18).webp";
-import im9 from "../../public/images/Galleryimage (19).webp";
-import im10 from "../../public/images/Galleryimage (2).webp";
-import im11 from "../../public/images/Galleryimage (20).webp";
-import im12 from "../../public/images/Galleryimage (21).webp";
-import im13 from "../../public/images/Galleryimage (22).webp";
+import Image1 from "../../public/images/Gallery (1).webp";
+import Image2 from "../../public/images/Gallery (2).webp";
+import Image3 from "../../public/images/Gallery (3).webp";
+import Image4 from "../../public/images/Gallery (4).webp";
+import Image5 from "../../public/images/Gallery (5).webp";
+import Image6 from "../../public/images/Gallery (6).webp";
+import Image7 from "../../public/images/Gallery (7).webp";
+import Image8 from "../../public/images/Gallery (8).webp";
+import Image9 from "../../public/images/Gallery (9).webp";
+import Image10 from "../../public/images/Gallery (10).webp";
+import Image11 from "../../public/images/Gallery (11).webp";
+import Image12 from "../../public/images/Gallery (12).webp";
+import Image13 from "../../public/images/Gallery (13).webp";
+import Image14 from "../../public/images/Gallery (14).webp";
+import Image15 from "../../public/images/Gallery (15).webp";
 
 // Define an interface for the image object
 interface ImageObject {
@@ -28,114 +27,96 @@ interface ImageObject {
   alt: string;
 }
 
-const images = [
+const images: ImageObject[] = [
   {
     filter: "architecture",
-    title: "title 1",
-    image: Apple,
-    alt: "h",
-  },
-  {
-    filter: "landscape",
-    title: "title 2",
-    image: DNA,
-    alt: "h",
-  },
-  {
-    filter: "landscape",
-    title: "title 3",
-    image: im1,
-    alt: "h",
-  },
-  {
-    filter: "landscape",
-    title: "title 4",
-    image: im2,
-    alt: "h",
+    title: "Serenity Passing",
+    image: Image1,
+    alt: "An image showcasing a curved hallway",
   },
   {
     filter: "architecture",
-    title: "title 5",
-    image: im3,
-    alt: "h",
-  },
-  {
-    filter: "Cityscape",
-    title: "title 6",
-    image: im4,
-    alt: "h",
+    title: "Repeated Habits",
+    image: Image2,
+    alt: "A mesmerizing view of a university library",
   },
   {
     filter: "architecture",
-    title: "title 7",
-    image: im5,
-    alt: "h",
+    title: "Urban Oasis",
+    image: Image3,
+    alt: "A stunning architectural structure submurged in rain",
   },
   {
-    filter: "Cityscape",
-    title: "title 8",
-    image: im6,
-    alt: "h",
-  },
-  {
-    filter: "landscape",
-    title: "title 9",
-    image: im7,
-    alt: "h",
+    filter: "city",
+    title: "Reflection Roles",
+    image: Image4,
+    alt: "A tranquil scene of a sunset over a building",
   },
   {
     filter: "architecture",
-    title: "title 10",
-    image: Space,
-    alt: "h",
+    title: "The Flame In Us",
+    image: Image5,
+    alt: "A dark tower with neon lighting",
   },
   {
-    filter: "landscape",
-    title: "title 11",
-    image: Apple,
-    alt: "h",
-  },
-  {
-    filter: "Cityscape",
-    title: "title 12",
-    image: DNA,
-    alt: "h",
+    filter: "city",
+    title: "Skyview",
+    image: Image6,
+    alt: "A majestic view of the city lights from a mountain",
   },
   {
     filter: "architecture",
-    title: "title 13",
-    image: im8,
-    alt: "h",
+    title: "A Way Out",
+    image: Image7,
+    alt: "A charming historical building with intricate details",
   },
   {
     filter: "landscape",
-    title: "title 14",
-    image: im9,
-    alt: "h",
+    title: "Grey Fields",
+    image: Image8,
+    alt: "Vast fields bathed in golden sunlight",
   },
   {
-    filter: "Cityscape",
-    title: "title 15",
-    image: im10,
-    alt: "h",
+    filter: "city",
+    title: "White Sky",
+    image: Image9,
+    alt: "A city skyline reflecting on a calm body of water",
+  },
+  {
+    filter: "landscape",
+    title: "Snow In Oblivion",
+    image: Image10,
+    alt: "A breathtaking view of a lighted building in the snow ",
   },
   {
     filter: "architecture",
-    title: "title 16",
-    image: im11,
-    alt: "h",
+    title: "Timeless Elegance",
+    image: Image11,
+    alt: "An architectural masterpiece standing the test of time",
+  },
+  {
+    filter: "architecture",
+    title: "An Uphill Walk",
+    image: Image12,
+    alt: "a hill showing part of a building structure",
   },
   {
     filter: "landscape",
-    title: "title 17",
-    image: im12,
-    alt: "h",
+    title: "Spring Stairs",
+    image: Image13,
+    alt: "spring weather in the city streats",
   },
   {
-    filter: "Cityscape",
-    title: "title 18",
-    image: im13,
-    alt: "h",
+    filter: "architecture",
+    title: "A Lifes State",
+    image: Image14,
+    alt: "A Cat ssleeping on the bed in a comfortable position",
+  },
+  {
+    filter: "landscape",
+    title: "Green Road",
+    image: Image15,
+    alt: "A greenpathway filled with plants",
   },
 ];
 
@@ -224,7 +205,7 @@ const GalleryComponent = () => {
                   : "p-4 text-xs sm:text-lg hover:bg-gray-700 transition duration-300 ease-in-out rounded"
               }`}
             >
-              {filter === "all" ? "Show all" : filter}
+              {filter === "all" ? "show all" : filter}
             </button>
           ))}
         </div>

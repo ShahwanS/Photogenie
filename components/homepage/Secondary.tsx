@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-import im4 from "../../public/images/typ im cafe.jpg";
-import im5 from "../../public/images/sec (2).webp";
-import im6 from "../../public/images/sec (1).jpg";
-import im7 from "../../public/images/sec (2).jpg";
+import im4 from "../../public/images/sec (3).webp";
+import im5 from "../../public/images/sec (4).webp";
+import im6 from "../../public/images/sec (6).webp";
+import im7 from "../../public/images/sec (5).webp";
 
 const Secondary = () => {
   return (
