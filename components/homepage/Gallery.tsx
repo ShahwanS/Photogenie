@@ -29,91 +29,91 @@ interface ImageObject {
 
 const images: ImageObject[] = [
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "Serenity Passing",
     image: Image1,
     alt: "An image showcasing a curved hallway",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "Repeated Habits",
     image: Image2,
     alt: "A mesmerizing view of a university library",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "Urban Oasis",
     image: Image3,
     alt: "A stunning architectural structure submurged in rain",
   },
   {
-    filter: "city",
+    filter: "Cityscape",
     title: "Reflection Roles",
     image: Image4,
     alt: "A tranquil scene of a sunset over a building",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "The Flame In Us",
     image: Image5,
     alt: "A dark tower with neon lighting",
   },
   {
-    filter: "city",
+    filter: "Cityscape",
     title: "Skyview",
     image: Image6,
     alt: "A majestic view of the city lights from a mountain",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "A Way Out",
     image: Image7,
     alt: "A charming historical building with intricate details",
   },
   {
-    filter: "landscape",
+    filter: "Landscape",
     title: "Grey Fields",
     image: Image8,
     alt: "Vast fields bathed in golden sunlight",
   },
   {
-    filter: "city",
+    filter: "Cityscape",
     title: "White Sky",
     image: Image9,
     alt: "A city skyline reflecting on a calm body of water",
   },
   {
-    filter: "landscape",
+    filter: "Landscape",
     title: "Snow In Oblivion",
     image: Image10,
     alt: "A breathtaking view of a lighted building in the snow ",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "Timeless Elegance",
     image: Image11,
     alt: "An architectural masterpiece standing the test of time",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "An Uphill Walk",
     image: Image12,
     alt: "a hill showing part of a building structure",
   },
   {
-    filter: "landscape",
+    filter: "Landscape",
     title: "Spring Stairs",
     image: Image13,
     alt: "spring weather in the city streats",
   },
   {
-    filter: "architecture",
+    filter: "Architecture",
     title: "A Lifes State",
     image: Image14,
     alt: "A Cat ssleeping on the bed in a comfortable position",
   },
   {
-    filter: "landscape",
+    filter: "Landscape",
     title: "Green Road",
     image: Image15,
     alt: "A greenpathway filled with plants",
@@ -195,7 +195,7 @@ const GalleryComponent = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-1 sm:gap-4 mb-4 sm:mb-8">
-          {["all", "Cityscape", "landscape", "architecture"].map((filter) => (
+          {["All", "Cityscape", "Landscape", "Architecture"].map((filter) => (
             <button
               key={filter}
               onClick={() => handleFilter(filter)}
@@ -205,7 +205,7 @@ const GalleryComponent = () => {
                   : "p-4 text-xs sm:text-lg hover:bg-gray-700 transition duration-300 ease-in-out rounded"
               }`}
             >
-              {filter === "all" ? "show all" : filter}
+              {filter === "All" ? "Show All" : filter}
             </button>
           ))}
         </div>
