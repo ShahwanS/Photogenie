@@ -195,7 +195,7 @@ const GalleryComponent = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-1 sm:gap-4 mb-4 sm:mb-8">
-          {["All", "Cityscape", "Landscape", "Architecture"].map((filter) => (
+          {["all", "Cityscape", "Landscape", "Architecture"].map((filter) => (
             <button
               key={filter}
               onClick={() => handleFilter(filter)}
@@ -205,7 +205,7 @@ const GalleryComponent = () => {
                   : "p-4 text-xs sm:text-lg hover:bg-gray-700 transition duration-300 ease-in-out rounded"
               }`}
             >
-              {filter === "All" ? "Show All" : filter}
+              {filter === "all" ? "Show All" : filter}
             </button>
           ))}
         </div>
